@@ -38,7 +38,7 @@ const { plan } = Astro.props;
         href={plan.button.link || "#"}
         block
         class={plan.popular ? "bg-red-800 hover:outline hover:outline-1 hover:outline-red-800 hover:text-red-800 hover:bg-white" :
-         "text-red-800 outline outline-1 outline-red-800 text-red-800 bg-white hover:bg-red-800 hover:text-white"}>
+         "!text-red-800 outline outline-1 outline-red-800 bg-white hover:bg-red-800 hover:text-white"}>
         {plan.button.text || "Get Started"}
       </Link>
     </div>
