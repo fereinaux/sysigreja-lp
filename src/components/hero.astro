@@ -1,17 +1,28 @@
 ---
 import { Picture } from "astro:assets";
 import heroImage from "assets/hero.png";
+import heroImage2 from "assets/hero2.png";
 import Link from "@components/ui/link.astro";
 import { Icon } from "astro-icon";
 ---
 
 <main
   class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24">
-  <div class="py-6 md:order-1 hidden md:block">
+  <div class="py-6 md:order-1 hidden md:flex gap-3 ">
     <Picture
       src={heroImage}
       alt="Astronaut in the air"
       widths={[200, 400, 600]}
+      height={500}
+      sizes="(max-width: 800px) 100vw, 620px"
+      loading="eager"
+      format="avif"
+    />
+    <Picture
+      src={heroImage2}
+      alt="Astronaut in the air"
+      widths={[200, 400, 600]}
+      height={500}
       sizes="(max-width: 800px) 100vw, 620px"
       loading="eager"
       format="avif"
@@ -20,34 +31,20 @@ import { Icon } from "astro-icon";
   <div>
     <h1
       class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter">
-      Marketing website done with Astro
+      Gerencie o seu evento com o SysIgreja
     </h1>
     <p class="text-lg mt-4 text-slate-600 max-w-xl">
-      Astroship is a starter template for startups, marketing websites & landing
-      pages.<wbr /> Built with Astro.build and TailwindCSS. You can quickly
-      create any website with this starter.
+      SysIgreja é um sistema para gerenciamento de eventos totalmente adaptado para Igrejas.<wbr /> Construído por quem está por dentro das necessidades de Congressos, Retiros, Acampamentos. Você pode colocar o seu evento disponível para inscrição rapidamente.
     </p>
     <div class="mt-6 flex flex-col sm:flex-row gap-3">
       <Link
         href="#"
-        href="https://web3templates.com/templates/astroship-starter-website-template-for-astro"
+        href="https://sysigreja.com/Evento/FinalizarEvento"
         target="_blank"
-        class="flex gap-1 items-center justify-center"
+        class="flex gap-1 items-center justify-center bg-red-800 hover:text-red-800 hover:outline-1 hover:outline hover:outline-red-800 hover:bg-white"
         rel="noopener">
-        <Icon class="text-white w-5 h-5" name="bx:bxs-cloud-download" />
-
-         Download for Free
-      </Link>
-      <Link
-        size="lg"
-        style="outline"
-        rel="noopener"
-        href="https://github.com/surjithctly/astroship"
-        class="flex gap-1 items-center justify-center"
-        target="_blank">
-        <Icon class="text-black w-4 h-4" name="bx:bxl-github" />
-         GitHub Repo
-      </Link>
+       CRIE SEU EVENTO
+      </Link>   
     </div>
   </div>
 </main>

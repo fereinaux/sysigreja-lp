@@ -1,16 +1,19 @@
 ---
-// @ts-ignore
-import { Icon } from "astro-icon";
+import { Image } from "astro:assets";
+import ae from "assets/ae.png";
+import get from "assets/get.png";
+import iecb from "assets/iecb.png";
+import pdc from "assets/pdc.png";
+import recon from "assets/recon.png";
 ---
 
 <div class="mt-24">
-  <h2 class="text-center text-slate-500">Works with your technologies</h2>
+  <h2 class="text-center text-slate-500">Faça parte assim como</h2>
   <div class="flex gap-8 md:gap-20 items-center justify-center mt-10 flex-wrap">
-    <Icon class="h-8 md:h-12" name="simple-icons:react" />
-    <Icon class="h-8 md:h-12" name="simple-icons:svelte" />
-    <Icon class="h-8 md:h-14" name="simple-icons:tailwindcss" />
-    <Icon class="h-8 md:h-16" name="simple-icons:alpinedotjs" />
-    <Icon class="h-8 md:h-12" name="simple-icons:vercel" />
-    <Icon class="h-8 md:h-12" name="simple-icons:astro" />
+   <Image src={iecb} alt={"IECB | Catedral da Trindade" }  width={70}/>
+   <Image src={recon} alt={"IECB | Catedral da Reconciliação" }  width={70}/>
+   <Image src={pdc} alt={"IECB | Paróquia Deus Conosco" }  width={70}/>
+   <Image src={get} alt={"IECB | Paróquia Getsêmani" }  width={70}/>
+   <Image src={ae} alt={"Associação Impacto" }  width={70}/>
   </div>
 </div>

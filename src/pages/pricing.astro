@@ -6,70 +6,67 @@ import PricingCard from "@components/pricing.astro";
 
 const pricing = [
   {
-    name: "Personal",
-    price: "Free",
+    name: "Iniciante",
+    price: "Gratuito",
     popular: false,
     features: [
-      "Lifetime free",
-      "Up to 3 users",
-      "Unlimited Pages",
-      "Astro Sub domain",
-      "Basic Integrations",
-      "Community Support",
+      "Gratuito para sempre",
+      "Até 3 usuários",
+      "Limite de 200 inscritos",
+      "1 Evento",
+      "Funções básicas",
+      "Suporte",
     ],
     button: {
-      text: "Get Started",
+      text: "Comece agora",
       link: "/",
     },
   },
   {
-    name: "Startup",
+    name: "Básico",
     price: {
-      monthly: "$19",
-      annual: "$16",
-      discount: "10%",
-      original: "$24",
+      monthly: "R$ 150,00",
     },
     popular: true,
     features: [
-      "All Free Features",
-      "Up to 20 users",
-      "20 Custom domains",
-      "Unlimited Collaborators",
-      "Advanced Integrations",
-      "Priority Support",
+      "Até 20 usuários",
+      "5 Eventos",
+      "Sem limite de inscritos ",
+      "Funções Avançadas",
+      "Integrações",
+      "Suporte Prioritário",
     ],
     button: {
-      text: "Get Started",
+      text: "Comece agora",
       link: "#",
     },
   },
   {
-    name: "Enterprise",
-    price: "Custom",
+    name: "Avançado",
+    price: "Customizável",
     popular: false,
     features: [
-      "All Pro Features",
-      "Unlimited Custom domains",
-      "99.99% Uptime SLA",
-      "SAML & SSO Integration",
-      "Dedicated Account Manager",
-      "24/7 Phone Support",
+      "Hub de eventos particular",
+      "Usuários ilimitados",
+      "Eventos ilimitados",
+      "Todas as funções liberadas",
+      "Consultoria de gestão",
+      "Suporte Personalizado",
     ],
     button: {
-      text: "Contact us",
+      text: "Fale conosco",
       link: "/contact",
     },
   },
 ];
 ---
 
-<Layout title="Pricing">
+<Layout title="Preços">
   <Container>
     <Sectionhead>
-      <Fragment slot="title">Pricing</Fragment>
+      <Fragment slot="title">Preços</Fragment>
       <Fragment slot="desc">
-        Simple & Predictable pricing. No Surprises.
+       Simples, sem surpresas.
       </Fragment>
     </Sectionhead>
 
